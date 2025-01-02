@@ -1,5 +1,8 @@
 package com.example.javalin;
 
+import com.example.javalin.controllers.Index;
+import com.example.javalin.controllers.SRController;
+import com.example.javalin.services.SRService;
 import io.javalin.Javalin;
 
 public class DiggarenJavalinApplication {
@@ -11,8 +14,16 @@ public class DiggarenJavalinApplication {
             });
         }).start(5008); // Servern körs på denna porten (5008)
 
-        app.get("/", ctx -> ctx.result("Välkommen till Diggaren"));
+        SRService srService = new SRService();
+        SRController srController = new SRController(srService);
+        Index indexController = new Index();
 
-        // Här lägger vi till fler endpoints
+        // Lägger till endpoints
+        app.get("/", indexController.index); // Root endpoint
+        app.get("/P1.html", indexController.getP1);
+        app.get("/P2.html", indexController.getP2);
+        app.get("/P3.html", indexController.getP3);
+        app.get("/P4.html", indexController.getP4);
+        app.get("/api/p3", srController.getP3Data);
     }
 }
