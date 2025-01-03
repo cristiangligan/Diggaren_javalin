@@ -24,3 +24,64 @@ header h1 {
 header h1 img {
     height: 50px;
 }
+
+header h2 {
+    margin: 10px
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #18a148;
+}
+
+#radioBilder p {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+#omOss {
+    margin: 55px;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 15px 52px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #18a148;
+
+}
