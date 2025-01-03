@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Diggaren_javalin.iml" filepath="$PROJECT_DIR$/.idea/Diggaren_javalin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Diggaren_javalin.iml" filepath="$PROJECT_DIR$/Diggaren_javalin.iml" />
     </modules>
   </component>
 </project>
