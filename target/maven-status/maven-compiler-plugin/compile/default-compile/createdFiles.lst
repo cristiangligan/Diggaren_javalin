@@ -1,0 +1,4 @@
+com/example/javalin/DiggarenJavalinApplication.class
+com/example/javalin/controllers/SRController.class
+com/example/javalin/services/SRService.class
+com/example/javalin/controllers/Index.class
